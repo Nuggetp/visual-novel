@@ -1,0 +1,206 @@
+{
+  "scene": 1,
+  "acts": [
+    {
+      "act": 1,
+      "events": [
+        {
+          "type": "dialogue",
+          "speaker": "Narrator",
+          "text": "{user} is a wealthy citizen of the Country of Illyria. He has just set sail to the Island of Ipswich, where he has been invited to a festival. He has brought 4 crew members along, Jonas, Miller, Owl, Pyro. Please read the character list for more information about an individual.",
+          "additional_notes": null
+        },
+        {
+          "type": "dialogue",
+          "speaker": "{user}",
+          "text": "(The ship has just set sail, let's head to the cabin for dinner.)",
+          "additional_notes": null
+        }
+      ]
+    },
+    {
+      "act": 2,
+      "events": [
+        {
+          "type": "dialogue",
+          "speaker": "Owl",
+          "text": "There you are {user}, we have been looking for you for a long time now. Where have you been?",
+          "additional_notes": null
+        },
+        {
+          "type": "dialogue",
+          "speaker": "{user}",
+          "text": "Looking at the beautiful night sky, of course.",
+          "additional_notes": null
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Miller",
+          "text": "We've baked some potatoes, here, have some!",
+          "additional_notes": null
+        },
+        {
+          "type": "choice event",
+          "speaker": "{user}",
+          "options": [
+            {
+              "id": 1,
+              "text": "Thank you! I'd love to have some",
+              "additional_notes": null
+            },
+            {
+              "id": 2,
+              "text": "*Quitely grabs a potato*",
+              "additional_notes": null
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Jonas",
+          "text": "So, what's everyone going to Ipswich for?",
+          "additional_notes": null
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Pyro",
+          "text": "I found a job there. A 4-star chef in a local restaurant. I could make dinner for ya'll everyday. Some pre-training if you know what I mean.",
+          "additional_notes": null
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Owl",
+          "text": "We got some spices downstairs. I'm wondering what you can cook up. Don't explode the kitchen.",
+          "additional_notes": null
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Jonas",
+          "text": "You'd be the one to explode it. I'm Owl's brother, and we're going to visit our grandparents there.",
+          "additional_notes": null
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Jonas",
+          "text": "Last time Owl tried to make an omelet, we had to call the fire department.",
+          "additional_notes": null
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Miller",
+          "text": "Okay enough joking, this is serious business, we might all drown!",
+          "additional_notes": null
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Owl",
+          "text": "Alright, alright. Where are you headin' lady?",
+          "additional_notes": null
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Miller",
+          "text": "I was invited to a festival there. I think it was called the Chime Festival, it's supposed to celebrate the 50th anniversary of the Golden Bell.",
+          "additional_notes": null
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Pyro",
+          "text": "The Golden Bell?",
+          "additional_notes": null
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Miller",
+          "text": "50 years ago, a man named Fredrick D. Martinez brilliantly defended Ipswich from a group of strong pirates. He found a giant golden bell and gifted it to the Island's ruler.",
+          "additional_notes": null
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Pyro",
+          "text": "What an interesting story...",
+          "additional_notes": null
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Miller",
+          "text": "And you {user}? Why are you going to Ipswich?",
+          "additional_notes": null
+        },
+        {
+          "type": "choice event",
+          "speaker": "{user}",
+          "options": [
+            {
+              "id": 1,
+              "text": "I'm going to the festival too! We can go together if you'd like.",
+              "additional_notes": "+2 trust Miller",
+              "followup": {
+                "type": "dialogue",
+                "speaker": "Miller",
+                "text": "I would love too!",
+                "additional_notes": "+2 trust Miller"
+              }
+            },
+            {
+              "id": 2,
+              "text": "That'll be a secret…",
+              "additional_notes": null,
+              "followup": {
+                "type": "dialogue",
+                "speaker": "Jonas",
+                "text": "Alright then, mysterious guy.",
+                "additional_notes" : "-2 trust everyone"
+              }
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Pyro",
+          "text": "What a night of introductions. I’m tired. See you guys tomorrow.",
+          "additional_notes": "*leaves*"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Owl",
+          "text": "I think I’ve had enough social interaction today.",
+          "additional_notes": "*Gets up stool and leaves*"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Jonas",
+          "text": "Seems like a successful meeting. Time for sleep. See ya’ll.",
+          "additional_notes": "*Leaves from the back door*"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Miller",
+          "text": "… {user}?",
+          "additional_notes": null
+        },
+        {
+          "type": "choice event",
+          "speaker": "{user}",
+          "options": [
+            {
+              "id": 1,
+              "text": "Yes?",
+              "additional_notes": null
+            },
+            {
+              "id": 2,
+              "text": "This is so romantic, right? That's what you were about to say!",
+              "additional_notes": "+3 relation points Miller",
+              "followup": {
+                "type": "dialogue",
+                "speaker": "Miller",
+                "text": "*laughs* No you idiot!"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
